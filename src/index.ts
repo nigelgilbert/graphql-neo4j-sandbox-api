@@ -24,6 +24,10 @@ const driver = neo4j.driver(
 const server = new GraphQLServer({
   schema,
   context: { driver },
-})
+});
 
-server.start(() => console.log('Server is running on http://localhost:4000'))
+const options = {
+  endpoint: '/graphql'
+};
+
+server.start(options, () => console.log('Server is running on http://localhost:4000'))
