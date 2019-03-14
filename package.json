@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "npm-run-all --parallel start playground",
