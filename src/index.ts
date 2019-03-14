@@ -4,13 +4,13 @@ import { v1 as neo4j } from 'neo4j-driver';
 
 const typeDefs = `
   type Session {
+      name: String!
       about: String
       date: Int
-      name: String
       tags: [Tag] @relation(name: "HAS_TAG", direction: "OUT")
   }
   type Tag {
-      name: String
+      name: String!
   }
 `;
 
@@ -23,7 +23,7 @@ const driver = neo4j.driver(
 
 const server = new GraphQLServer({
   schema,
-  context: { driver }
+  context: { driver },
 })
 
 server.start(() => console.log('Server is running on http://localhost:4000'))
