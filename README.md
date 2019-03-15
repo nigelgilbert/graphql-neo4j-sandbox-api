@@ -12,4 +12,4 @@ The [GraphQL API](https://boiling-hollows-82728.herokuapp.com/) is deployed to a
 
 ## Goal
 - Learn about Graphing databases and GraphQL
-- To get 3rd party data from this server into an Arc component from the [Arc tutorial](https://dmn.arcpublishing.com/alc/arc-products/pagebuilder/fusion/documentation/recipes/fetching-content.md)
+- Get 3rd party data from this server into an Arc component from the [Arc tutorial](https://dmn.arcpublishing.com/alc/arc-products/pagebuilder/fusion/documentation/recipes/fetching-content.md)
