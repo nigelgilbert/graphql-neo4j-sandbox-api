@@ -5,7 +5,7 @@ import { v1 as neo4j } from 'neo4j-driver';
 const typeDefs = `
   type Session {
       name: String!
-      about: String
+      description: String
       date: Date
       tags: [Tag] @relation(name: "HAS_TAG", direction: "OUT")
   }
