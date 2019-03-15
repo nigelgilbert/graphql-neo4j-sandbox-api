@@ -1,4 +1,4 @@
-import { GraphQLServer } from 'graphql-yoga'
+import { GraphQLServer, Options } from 'graphql-yoga'
 import { makeAugmentedSchema } from 'neo4j-graphql-js';
 import { v1 as neo4j } from 'neo4j-driver';
 
@@ -26,8 +26,12 @@ const server = new GraphQLServer({
   context: { driver },
 });
 
-const options = {
-  endpoint: '/graphql'
+const options: Options = {
+  endpoint: '/graphql',
+  getEndpoint: true,
+  cors: {
+    origin: /.*/
+  }
 };
 
 server.start(options, () => console.log('Server is running on http://localhost:4000'))
