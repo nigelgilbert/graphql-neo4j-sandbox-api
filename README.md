@@ -14,5 +14,5 @@ The [GraphQL API](https://boiling-hollows-82728.herokuapp.com/) is deployed to a
 ## Tools
 - Project generated with [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) (which is awesome)
 
-## HTTP Example Usage
+## HTTP GraphQL API Example Usage
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/555b575d7ddde7f36f4d)
