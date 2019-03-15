@@ -6,3 +6,6 @@ It displays a list of `Session` objects from the `GraphConnect 2018 Schedule` sa
 It demonstrates fetching 3rd-party GraphQL data with **both the Arc [Content API](https://dmn.arcpublishing.com/alc/arc-products/pagebuilder/fusion/documentation/recipes/using-graphql-schema.md) and the [Apollo client.](https://github.com/apollographql/apollo-client)**
 
 The directory structure parities the Fusion CLI directory structure generated with `npx @arc-fusion/cli init`.
+
+## Notes
+- Requires `@arc-fusion/cli` version `<= 0.1.38`
