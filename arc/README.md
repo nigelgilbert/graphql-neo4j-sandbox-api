@@ -1,5 +1,5 @@
 # About
-This is an Arc [Feature Pack](https://dmn.arcpublishing.com/alc/arc-products/pagebuilder/fusion/documentation/recipes/creating-feature-pack.md) that consumes the [GraphQL API](https://github.com/nigelgilbert/graphql-neo4j-sandbox-api/blob/master/src/index.ts) in `src/`.  
+This is an [Arc Feature Pack](https://dmn.arcpublishing.com/alc/arc-products/pagebuilder/fusion/documentation/recipes/creating-feature-pack.md) that consumes the [GraphQL API](https://github.com/nigelgilbert/graphql-neo4j-sandbox-api/blob/master/src/index.ts) in `src/`.  
 
 It displays a list of `Session` objects from the `GraphConnect 2018 Schedule` sandbox graph.
 
