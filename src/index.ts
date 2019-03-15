@@ -6,7 +6,7 @@ const typeDefs = `
   type Session {
       name: String!
       about: String
-      date: Int
+      date: Date
       tags: [Tag] @relation(name: "HAS_TAG", direction: "OUT")
   }
   type Tag {
