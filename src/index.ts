@@ -17,8 +17,8 @@ const typeDefs = `
 const schema = makeAugmentedSchema({ typeDefs });
 
 const driver = neo4j.driver(
-  'bolt://34.201.165.152:32909',
-  neo4j.auth.basic('neo4j', 'meaning-vehicles-jeopardies')
+  'bolt://34.201.165.152:33118',
+  neo4j.auth.basic('neo4j', 'deserter-hold-cupfuls')
 );
 
 const server = new GraphQLServer({
