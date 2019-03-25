@@ -4,13 +4,16 @@ import { v1 as neo4j } from 'neo4j-driver';
 
 const typeDefs = `
   type Session {
-      name: String!
-      description: String
-      date: Date
-      tags: [Tag] @relation(name: "HAS_TAG", direction: "OUT")
+    name: String!
+    description: String
+    date: Date
+    tags: [Tag] @relation(name: "HAS_TAG", direction: "OUT")
   }
   type Tag {
-      name: String!
+    name: String!
+  }
+  type Query {
+    sessionById(_id: ID!): Session
   }
 `;
 
