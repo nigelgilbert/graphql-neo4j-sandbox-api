@@ -8,8 +8,17 @@ const typeDefs = `
     description: String
     date: Date
     tags: [Tag] @relation(name: "HAS_TAG", direction: "OUT")
+    venue: Venue @relation(name: "TAKES_PLACE_IN", direction: "OUT")
+    speaker: Speaker @relation(name: "SPEAKS_AT", direction: "IN")
   }
   type Tag {
+    name: String!
+  }
+  type Speaker {
+    name: String!
+    about: String
+  }
+  type Venue {
     name: String!
   }
   type Query {
